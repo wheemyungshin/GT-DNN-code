@@ -1,0 +1,1 @@
+ python3 keras_retinanet/bin/train.py --gpu 0,1 --multi-gpu 2 --multi-gpu-force --batch-size 4 --epochs 50 --steps 1000 --lr 0.00005 --imagenet-weights --image-min-side 1024 --image-max-side 1024 --backbone resnet50 --random-transform  --snapshot-path snapshots40-train5678-scratch-1024 csv cropped_images/hBN-123-train5678.csv  data/classes_hBN_123.csv

@@ -1,0 +1,39 @@
+(아래의 명령어를 리눅스 커널에 모두 순서대로 입력해주십시오.)
+(폴더 위치로 이동)
+cd <keras-retinanet-code 폴더 위치>
+
+(가상환경 사용)
+(virtualenv를 다운로드 받습니다.)
+pip install virtualenv
+(venv라는 이름의 가상환경을 만듭니다.)
+virtualenv venv
+(가상환경에 진입합니다.)
+source venv/bin/activate
+(성공하면 (venv)표시가 나타나며 가상환경에 진입합니다.)
+
+(이제부터 windows에서 구성했던 패키지와 동일하게 설치하시면 됩니다.)
+----------------------------------가상환경 만들기-----------------------------------
+
+(필요 패키지 설치)
+python -m pip install --upgrade pip (스킵하셔도 됩니다. pip 관련 문제가 발생하면 
+에러 메세지와 함께 해결할 수 있는 명령어를 제시해 줄 것이니 그 명령어를 입력하시면 됩니다.)
+pip install keras==2.2.4
+(gpu를 사용하지 않는 경우)
+pip install tensorflow==1.15.0
+(gpu를 사용하는 경우)
+pip install tensorflow-gpu==1.15.0
+pip install .
+python setup.py build_ext --inplace
+
+이제 아래의 명령어를 실행해주세요.
+python keras_retinanet\bin\train.py --image-min-side 1200 --image-max-side 1200 --batch-size 4 --lr 0.003 csv <라벨 목록 경로> <클래스 정의 목록 경로>
+만약 첨부해드린 데이터 폴더를 keras-retinanet-code 폴더 안으로 옮기면 경로는 아래와 같습니다.
+python keras_retinanet\bin\train.py --image-min-side 1200 --image-max-side 1200 --batch-size 4 --lr 0.003 csv data/tune-G123_updated2_val9.csv data/classes_123.csv
+--------------------------------------------------------------------------------------
+
+(가상환경에서 나가기)
+deactivate
+
+(학습 및 명령어 취소)
+ctrl+c
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="860b5e70-e120-433c-a74b-8bd91ae2aa6e" name="keras-retinanet">
+        <fileTransfer rootFolder="/root/volume" accessType="SFTP" host="163.180.185.60" port="31754" sshConfigId="22d8ac6a-fa66-4cbe-b650-a9d5e22ce200" sshConfig="root@163.180.185.60:31754 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
