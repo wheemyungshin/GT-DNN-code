@@ -1,3 +1,6 @@
+# GT-DNN Implementation
+This repository is offical implementation code of GT-DNN (Shin, YJ, Shin, W, Taniguchi, T, Watanabe, K, Kim, P & Bae, SH 2021, 'Fast and accurate robotic optical detection of exfoliated graphene and hexagonal boron nitride by deep neural networks', 2D Materials, vol. 8, no. 3, 035017. https://doi.org/10.1088/2053-1583/abd72c). The repository highly depends on Keras RetinaNet. Data will be available soon.
+
 # Keras RetinaNet [![Build Status](https://travis-ci.org/fizyr/keras-retinanet.svg?branch=master)](https://travis-ci.org/fizyr/keras-retinanet) [![DOI](https://zenodo.org/badge/100249425.svg)](https://zenodo.org/badge/latestdoi/100249425)
 
 Keras implementation of RetinaNet object detection as described in [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002)
